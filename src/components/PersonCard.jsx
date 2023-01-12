@@ -9,14 +9,14 @@ export class PersonCard extends Component {
         }
     }
   render() {
-    const {personName, hairColor} = this.props
+    const {firstName, lastName, hairColor} = this.props
     const {age} = this.state;
     const birthday = () => this.setState({age: this.state.age + 1});
 
     return (
     <div className="card mb-3">
         <div className="card-body ">
-            <h2>{personName}</h2>
+            <h2>{lastName}, {firstName}</h2>
             <p className="card-text">Age: {age}</p>
             <p className="card-text">Hair Color: {hairColor}</p>
             <button className="btn btn-primary" onClick={birthday}>Birthday</button>

@@ -11,7 +11,8 @@ export class App extends Component {
             return(
               <PersonCard
               key={idx} 
-              personName={person.personName}
+              firstName={person.firstName}
+              lastName={person.lastName}
               age={person.age}
               hairColor={person.hairColor}
               />
